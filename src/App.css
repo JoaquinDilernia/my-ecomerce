@@ -111,6 +111,8 @@ border-bottom: none;
 .cartwidget {
     float: right;
     padding: 10px 70px;
+    color: #ffff;
+    
 }
 .cartwidget span{
 font-size: 30px;

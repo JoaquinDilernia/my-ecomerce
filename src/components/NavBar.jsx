@@ -20,11 +20,12 @@ return (
   </li>
 <li><a href="">Contacto</a></li>
 <li><a href="">Login</a></li>
+<li><CartWidget/></li>
 </ul>
 </nav>
 </div>
 </header>
-<CartWidget/>
+
 </>
 
 )
