@@ -6,7 +6,7 @@ return (
 <>
 <header>
 <div className="interior">
-  <a href="" className="logo"><img src="../img/logo.png" alt="" /></a>
+  <a href="" className="logo"><img src="../img/logo.png" alt="" /> Apple Argentina</a>
 <nav className="navegacion">
 <ul>
 <li><a href="">Inicio</a></li>
