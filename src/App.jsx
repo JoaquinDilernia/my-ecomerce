@@ -11,7 +11,7 @@ const App = () => {
   console.log(nombre);
 
   return (
-    <>
+<>
 <ChakraProvider>
 
 <NavBar />
@@ -19,7 +19,7 @@ const App = () => {
 
 </ChakraProvider>
 </>
-  )
+)
 }
 
 export default App

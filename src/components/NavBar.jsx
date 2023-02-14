@@ -1,24 +1,22 @@
 import CartWidget from "./CartWidget"
-import { Menu, MenuButton, MenuIcon, MenuItem, MenuList} from "@chakra-ui/react"
+
+import {Button, Menu, MenuList, MenuButton, MenuItem} from '@chakra-ui/react'
 const NavBar = () => {
 return (
 <>
-<h1>Apple Argentina</h1>
+<div>
 <Menu>
-  <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+  <MenuButton as={Button}>
     Actions
   </MenuButton>
   <MenuList>
-    <MenuItem>Iphone 12</MenuItem>
-    <MenuItem>Iphone 12</MenuItem>
-    <MenuItem>Iphone 12</MenuItem>
+    <MenuItem>IPHONE 12</MenuItem>
+    <MenuItem>IPHONE 12</MenuItem>
+    <MenuItem>IPHONE 12</MenuItem>
   </MenuList>
 </Menu>
-
-
+</div>
 <CartWidget/>
-
-
 </>
 
 )
