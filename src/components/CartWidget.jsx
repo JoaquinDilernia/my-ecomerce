@@ -2,8 +2,8 @@
 
 const CartWidget = () => {
 return (
-    <div>
-    <h5>Soy el carito de compras</h5>
+    <div className="cartwidget">
+    <span class="material-symbols-outlined">shopping_cart_checkout</span>
     <span>5</span>
     </div>
     )
