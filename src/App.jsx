@@ -13,9 +13,17 @@ const App = () => {
   return (
 <>
 <ChakraProvider>
-
-<NavBar />
+<header>
+  <NavBar />
+</header>
+<body>
+  <div className='containerbody'>
 <ItemListContainer greeting ={"Bienvenidos a mi tienda virtual"}/>
+</div>
+</body>
+<footer>
+
+</footer>
 
 </ChakraProvider>
 </>

@@ -100,20 +100,28 @@ border-bottom: none;
 }
 .navegacion .submenu .hijos li a{
     display: block;
-    }
+}
+.cartwidget {
+        float: right;
+        padding: 10px 70px;
+        color: #ffff;
+        
+}
+.cartwidget span{
+    font-size: 30px;
+}
+
+
+.containerbody{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8939950980392157) 7%, rgba(0,255,149,1) 50%, rgba(255,255,255,1) 100%);
+    height: 950px;
+}
 
 .greeting h5{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-
-}
-.cartwidget {
-    float: right;
-    padding: 10px 70px;
     color: #ffff;
-    
-}
-.cartwidget span{
-font-size: 30px;
+
 }
