@@ -1,39 +1,24 @@
-import React from 'react'
+import Data from "../data.json";
+import { Heading, Center } from "@chakra-ui/react";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({greeting}) => {
-  const datos =[
-    {id: 1, nombre: "PRODUCTO A", precio: 1000},
-    {id: 2, nombre: "PRODUCTO B", precio: 1500},
-    {id: 3, nombre: "PRODUCTO C", precio: 2000}
-    ];
-    const getDatos =()=> {
-      return new Promise((resolve, reject)=>{
-        if(datos.length === 0){
-          reject(new Error("No hay datos"))
-        }
-        setTimeout(()=> {
-          resolve (datos);
-        },3000);
-      })
-    };
-    
-    getDatos()
-    .then((datos)=> console.log(datos));
-    
-    async function fetchingData(){
-      try{
-        const datosFectched = await getDatos();
-        console.log(datosFetched);
-    
-      }catch(err){
-        console.log(err);
-      }
-    };
-    fetchingData();
+const ItemListContainer = () => {
+  const { category } = useParams();
+
+  const catFilter = Data.filter((product) => product.category === category);
+  console.log(catFilter);
+
   return (
-<>
-</>
-  )
-}
+    <div>
+      <Center h="100px" color="black">
+        <Heading as="h2" size="2xl">
+        { !category ? <h2>Catálogo</h2> : <h2>{`${category}`}</h2> }
+        </Heading>
+      </Center>
+        {category ? <ItemList product={catFilter} /> : <ItemList product={Data} /> }
+    </div>
+  );
+};
 
 export default ItemListContainer
