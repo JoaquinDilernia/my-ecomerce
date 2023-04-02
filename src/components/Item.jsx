@@ -11,13 +11,15 @@ import {
   Center,
   Flex
 } from "@chakra-ui/react";
-
 import { Link } from "react-router-dom";
-function currencyFormat(num) {
-  return '$' + num.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-}
+
 
 const Item = ({ id, name, description_short, price, image }) => {
+
+  function currencyFormat(num) {
+    return 'U$ ' + num.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+ }
+
   return (
     <div>
       <div key={id}>
@@ -29,7 +31,7 @@ const Item = ({ id, name, description_short, price, image }) => {
               <Heading size="sm">{name}</Heading>
                 <Text>{description_short}</Text>
                 <Text color="blue.600" fontSize="2xl">
-                  {price + ".-"}
+                  {currencyFormat(1*price)}
                 </Text>
               </Stack>
             </CardBody >
@@ -38,7 +40,7 @@ const Item = ({ id, name, description_short, price, image }) => {
               <Center className="btn-center">
                 <Button variant="solid" colorScheme="blue">
                   <Link to={`/item/${id}`}>Details</Link>
-                </Button>
+                </Button >
               </Center>
             </CardFooter>
           </Card>

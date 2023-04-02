@@ -1,5 +1,14 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
+import {  Button,
+  Flex,
+  Spacer,
+  Box,
+  ButtonGroup,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,} from '@chakra-ui/react'
 const Principal = () => {
   return (
     <div className='ConteinerPrincipal'>
@@ -11,7 +20,10 @@ const Principal = () => {
       <p className='texto2'>Looking for an even more advanced display? iPhone14 Pro hasDynamic
          Island,a magical new way to interact with iPhone.And an Always‑On
          display,which keeps your important info at a glance.</p>
-         <button className='btnBuy'> BUY </button>
+         
+         <Button className='btnBuy'>
+              <Link to={"/catalogue"}>BUY</Link>
+            </Button>
     </div>
   )
 }

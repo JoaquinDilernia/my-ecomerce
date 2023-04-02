@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget"
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {  Button,
   Flex,
   Spacer,
@@ -16,19 +16,20 @@ return (
 
   <>
   <div className="navbar">
-    <Flex maxW="150rem" alignItems="center" gap="2" pt="1">
+    <Flex  className="navbar__" alignItems="center" gap="2" pt="1">
       <Link to={"/"}>
         <Box display="flex" ml="20">
           <img id="logo" src="../img/logo.png" />
+          <h1>Apple</h1>
          
         </Box>
       </Link>
       <Spacer />
       <div className="botones_navbar">
-        <Flex>
+        <Flex justifyContent={"center"}>
           <ButtonGroup className="botones" gap="7" justify="center">
             <Button colorScheme="teal" variant="link">
-              <Link to={"/catalogue"}>Catálogo</Link>
+              <Link to={"/catalogue"}>Productos</Link>
             </Button>
             <Menu className="menu_nav">
               <MenuButton
@@ -41,7 +42,7 @@ return (
               </MenuButton>
               <MenuList bg="#383838">
                 <Flex>
-                  <Link to={`/category/${"iPhone12"}`}>
+                  <Link to={`/category/${"iphone12"}`}>
                     <MenuItem bg="ligth">
                    
                       iPhone 12
@@ -49,7 +50,7 @@ return (
                   </Link>
                 </Flex>
                 <Flex>
-                <Link to={`/category/${"iPhone13"}`}>
+                <Link to={`/category/${"iphone13"}`}>
                   <MenuItem bg="ligth">
                    
                   iPhone 13
@@ -57,21 +58,14 @@ return (
                 </Link>  
                 </Flex>
                 <Flex>
-                <Link to={`/category/${"iPhone14"}`}>
+                <Link to={`/category/${"iphone14"}`}>
                   <MenuItem bg="ligth">
                    
                   iPhone 14
                   </MenuItem>
                 </Link>  
                 </Flex>
-                <Flex>
-                <Link to={`/category/${"iPhone14"}`}>
-                  <MenuItem bg="ligth">
-                   
-                  iPhone 15
-                  </MenuItem>
-                </Link>
-                </Flex>
+                
               </MenuList>
             </Menu>
            
