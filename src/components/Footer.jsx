@@ -28,7 +28,7 @@ const Footer = () => {
       
       </div>
       <div className="footer_networks">
-        <h2>Sigamos Conectados..</h2>
+        <h2>Social/h2>
         <div className="networks">
         <Link target="_blank" to={"https://www.instagram.com"}>
             <i><FontAwesomeIcon icon={faInstagram}/></i>
