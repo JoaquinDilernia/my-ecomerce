@@ -21,9 +21,6 @@ const Principal = () => {
          Island,a magical new way to interact with iPhone.And an Always‑On
          display,which keeps your important info at a glance.</p>
          
-         <Button className='btnBuy'>
-              <Link to={"/catalogue"}>BUY</Link>
-            </Button>
     </div>
   )
 }

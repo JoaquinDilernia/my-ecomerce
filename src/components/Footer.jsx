@@ -8,15 +8,7 @@ import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="aboutUs">
-        <h2>Acerca de nosotros..</h2>
-        <div>
-          Somos una tienda especializada en la venta de consolas, juegos,
-          accesorios, muñecos y cientos de artículos relacionados con
-          Videojuegos y más!
-        </div>
-      </div>
-
+     
       <div className="footer_contact">
         <h2>Contactanos</h2>
         <Link target="_blank" to={"https://wa.link/6cnj10"}>
@@ -33,12 +25,7 @@ const Footer = () => {
             jdilernia99@gmail.com
           </button>
         </Flex>
-        <Link target="_blank" to={"https://goo.gl/maps/kjMzH9j4pm9SXN6d9"}>
-          <Flex alignItems="center" gap={2}>
-            <FontAwesomeIcon icon={faLocationDot} fontSize={22} />
-            <h4>Av. Díaz Vélez, C1414 CABA</h4>
-          </Flex>
-        </Link>
+      
       </div>
       <div className="footer_networks">
         <h2>Sigamos Conectados..</h2>
