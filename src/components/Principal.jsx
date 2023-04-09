@@ -1,14 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import {  Button,
-  Flex,
-  Spacer,
-  Box,
-  ButtonGroup,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,} from '@chakra-ui/react'
+
 const Principal = () => {
   return (
     <div className='ConteinerPrincipal'>
